@@ -1,0 +1,26 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "1000:1000"    # Expose port 3000 from the container to port 3000 on the host machine
+    volumes:
+      - .:/app         # Mount the current directory to /app inside the container
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - mongo           # If using a database like MongoDB
+    networks:
+      - app-network
+
+  mongo:
+    image: mongo:latest  # Use official MongoDB image
+    ports:
+      - "27017:27017"    # Expose MongoDB's default port
+    networks:
+      - app-network
+
+networks:
+  app-network:          # Define a custom network
+    driver: bridge
+
