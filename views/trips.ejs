@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      .big{
+        display: flex;
+        gap: 1rem;
+      }
+    </style>
+</head>
+<body>
+    <div class="big">
+    <form action="./raj" method="post">
+    <div class="card" style="width: 18rem;">
+        <img src="https://media.istockphoto.com/id/1135820309/photo/amber-fort-and-maota-lake-jaipur-rajasthan-india.jpg?b=1&s=612x612&w=0&k=20&c=yjUe8KhcwzW40tykVwJ3pOFEY8-L2bA76JL-Rpgg0TY=" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Rajasthan</h5>
+          <p class="card-text">Price:Rs.40000</p>
+           <select name="raj">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select> 
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div> 
+    </form>
+      <form action="./mumbai" method="post">
+      <div class="card" style="width: 18rem;">
+        <img src="https://cdn.britannica.com/26/84526-050-45452C37/Gateway-monument-India-entrance-Mumbai-Harbour-coast.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Mumbai</h5>
+          <p class="card-text">Price:Rs.30000</p>
+          <select name="mumbai">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select> 
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div> 
+      </form>
+      <form action="./goa" method="post">
+      <div class="card" style="width: 18rem;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/BeachFun.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Goa</h5>
+          <select name="goa">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select> 
+          <p class="card-text">Price:Rs.35000</p>
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div> 
+      </form>
+      <form action="./kashmir" method="post">
+      <div class="card" style="width: 18rem;">
+        <img src="https://lp-cms-production.imgix.net/2019-06/384e10f39ebc6fab9b991467541ce8ed-dal-lake.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Kashmir</h5>
+          <select name="kashmir">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select> 
+          <p class="card-text">Price:Rs.50000</p>
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div>
+      </form>
+      <form action="./kerala" method="post">
+      <div class="card" style="width: 18rem;">
+        <img src="https://travellersworldwide.com/wp-content/uploads/2023/02/Shutterstock_545452072.jpg.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Kerala</h5>
+          <select name="kerala">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select> 
+          <p class="card-text">Price:Rs.45000</p>
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+      </div> 
+    </form>
+    </div>
+    <form action="./showcart" method="post">
+      <button class="btn btn-primary">Show cart</button>
+    </form>
+    <form action="./logout" method="post">
+    <button class="btn btn-primary">Log Out</button>
+    </form>
+</body>
+</html>

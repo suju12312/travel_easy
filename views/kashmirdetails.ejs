@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>View Details</title>
+<style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap');
+
+:root{
+  --orange: #ffa500;
+}
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+*::selection{
+  background: var(--orange);
+  color: #fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+section{
+  padding: 2rem 9%;
+}
+
+.heading{
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.heading span{
+  font-size: 3.5rem;
+  background: rgb(255, 165, 0, .2);
+  color: var(--orange);
+  border-radius: .5rem;
+  padding: .2rem 1rem;
+  /* display: inline-block; */
+}
+
+.heading span.space{
+  background: none;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--orange);
+  color: #fff;
+  padding: .8rem 3rem;
+  border: .2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover{
+  background: rgb(255, 165, 0, .2);
+  color: var(--orange);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  font-size: 2rem;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+
+}
+
+ul {
+  background:var(--orange) ;
+  padding: 20px;
+}
+
+ul li {
+  background: #eceae6;
+  color: black ;
+  margin: 5px;
+  font-size: 2rem;
+}
+
+
+
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 2rem;
+}
+
+#customers td, #customers th {
+  border: 4px solid orange;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+
+
+</style>
+</head>
+<body>
+
+<h2 style="padding: 4rem; font: 6em sans-serif; color: orange;">Kashmir: <span style="color: black;"> Tour Booking & Package Details</span></h2>
+
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <img src="https://lp-cms-production.imgix.net/2019-06/384e10f39ebc6fab9b991467541ce8ed-dal-lake.jpg" alt="" style=" height: 28rem; width: 40rem; background-size: cover;">
+  </div>
+
+  <div class="column" style="background-color:#bbb;  padding: 3rem;">
+    <i class="fa-solid fa-clock" style="color: orange;"> <span style="color: black;">5/6 Days </span> </i> <br> <br>
+    <i class="fa-solid fa-location-dot" style="letter-spacing: 2px; color: orange;"> <span style="color: black;">Srinagar Airport, The Khyber Himalayan Resort & Spa, Betaab Valley </span></i><br><br>
+    <p>Kashmir attracts tourists for its unique handicrafts and the world-famous Kashmiri Shawls. </p>
+  </div>
+
+  <div class="column" style="background-color:#ccc; text-align: center; padding: 8rem;">
+    <h2 style="color: orange;">Starting from</h2>
+    <p>₹50000</p>
+    <form action="/kashmirdetails" method="post">
+      <button class="btn">Book Now</button>
+    </form>
+    
+  </div>
+</div>
+
+
+<h1 style="font-size: 3rem;">Package Includes:</h1>
+
+<ul>
+  <li>Air Conditioned Accommodation on double/  triple sharing with extra mattress basis at all places.</li>
+  <li>All transfer and sightseeing as per itinerary.</li>
+  <li>Entry permits, entry tickets, ferry tickets and forest area permits wherever applicable.</li>
+  <li>Meals in MAP</li>
+  <li>Assistance at all arrival and departure points.</li>
+  <li>All other specified expenses and activities.</li>
+  <li>All kind of transport and luxury Taxes.</li>
+</ul>
+
+<h1 style="font-size: 3rem;">Rules & Regulations:</h1>
+
+<ul>
+  <li>Management has right to alter itinerary according to unavoidable circumstances.</li>
+  <li>Management is not liable for any type of accident/ strike/ theft/ damage of luggage, etc. during tour period.</li>
+  <li>One child 1-2 years will be complimentary, sharing with parents in hotel accommodation only.</li>
+  <li>Infant tickets are required for 2 years.</li>
+  <li>Sightseeing strictly as per itinerary.</li>
+</ul>
+
+
+
+<h1 style="font-size: 3rem;">Hotel Details:</h1>
+
+<table id="customers">
+
+  <tr>
+    <td>Destination</td>
+    <td>Hotel</td>
+  </tr>
+  <tr>
+    <td>Port Blair</td>
+    <td>TSG Grand/TSG Emerald/Similar</td>
+  </tr>
+  <tr>
+    <td>Havelock</td>
+    <td>TSG Blue/Similar</td>
+  </tr>
+   <tr>
+    <td>Neil</td>
+    <td>TSG Aura / Similar</td>
+  </tr>
+
+
+</table>
+
+
+
+</body>
+</html>

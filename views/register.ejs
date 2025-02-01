@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- Click on link then visit usage and copy paste link of Usage as a Font in html head. Visit home page and Search icon by name: user so click on it and copy the link of i tag! -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: seagreen;
+    background-color: rebeccapurple;
+    background: url('https://img.freepik.com/free-photo/blue-concrete-textured-wall_53876-94019.jpg?w=900&t=st=1697656882~exp=1697657482~hmac=f414b913bbf348accad2bdd53b69e968f1d28aca5cd0303b50033a76edc3280b') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+  }
+  .wrapper h1{
+    font-size: 36px;
+    text-align: center;
+  }
+  .wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+  }
+  .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+  }
+  .input-box input::placeholder{
+    color: #fff;
+  }
+  .input-box i{
+    position: absolute;
+    right:20px;
+    top: 50%;
+    /* -50 upar jayega */
+    transform: translateY(-50%); 
+    font-size: 20px;
+  }
+
+.wrapper .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0px 15px;
+}
+.remember-forget label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forget a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0px 15px; 
+}
+ .register-link p a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+ .register-link a:hover{
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="/create" method="post">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Set a Username" name="user" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Set new Password" name="pass" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password" name="cpass" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <button type="submit" class="btn">Sign Up</button>
+
+        </form>
+    </div>
+</body>
+</html>
